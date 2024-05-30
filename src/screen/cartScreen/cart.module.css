@@ -42,7 +42,6 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 16px;
-    width: 100%;
     flex: 1;
 }
 
@@ -112,7 +111,8 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    width:190px;
+    width: 190px;
+    margin-bottom: 6px;
 }
 
 .desch3 {
@@ -124,22 +124,22 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    width:170px;
-  
+    width: 170px;
+    margin-top: -16px;
 }
 
 .sallerCard .footerCard {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 12px;
-    margin-right: 10px;
+    margin-top: 10px;
+    margin-right: 8px;
 }
 
 .calclaut {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
 
 }
 
@@ -173,7 +173,7 @@
 .footerCard .priceH2 {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     color: #202020;
 }
 
