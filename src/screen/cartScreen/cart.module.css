@@ -112,7 +112,7 @@
     overflow: hidden;
     white-space: nowrap;
     width: 190px;
-    margin-bottom: 6px;
+    margin-top: -4px;
 }
 
 .desch3 {
@@ -125,14 +125,14 @@
     overflow: hidden;
     white-space: nowrap;
     width: 170px;
-    margin-top: -16px;
+    margin-top: -8px;
 }
 
 .sallerCard .footerCard {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-right: 8px;
 }
 
