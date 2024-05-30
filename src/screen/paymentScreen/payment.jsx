@@ -1,27 +1,25 @@
 import React, { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import style from "./payment.module.css";
-import edit from "../../assets/edit.svg"
+import edit from "../../assets/edit.svg";
 import { IoClose } from 'react-icons/io5';
 import { FaCheckCircle } from "react-icons/fa";
-import { useNavigate } from 'react-router-dom';
-import img from "../../assets/img/cartImg.jpg";
 import Modal from '../../components/modal/modal';
 import ModalEdit from '../../components/modalEdit/modalEdit';
 import BottomBar from '../../components/bottomBar/bottomBar';
 import SuccessModal from "../../components/successModal/successModal";
 
 const Payment = () => {
+    const location = useLocation();
     const navigate = useNavigate();
 
-    const [selectedShipping, setSelectedShipping] = useState(''); // default to 'standard'
+    const [selectedShipping, setSelectedShipping] = useState('');
     const [isEditModal, setEditModal] = useState(false);
     const [isModalOpen, setModalOpen] = useState(false);
     const [voucher, setVoucher] = useState(null);
     const [isSuccessModal, setIsSuccessModal] = useState(false);
-    const [cartItems, setCartItems] = useState([
-        { id: 1, name: "Product 1", price: 17.01, description: "Lorem ipsum dolor sit amet consectetur.", size: "M" },
-        { id: 2, name: "Product 2", price: 17.23, description: "Lorem ipsum dolor sit amet consectetur.", size: "M" }
-    ]);
+
+    const cartItems = location.state?.cartItems || [];
     const [address, setAddress] = useState({
         addressLine: '26, Duong So 2, An Phu, Ho Chi Minh city',
         city: 'Ho Chi Minh city',
@@ -87,7 +85,7 @@ const Payment = () => {
                             <div>
                                 <div className={style.imgNum}>{item.id}</div>
                                 <div className={style.borderImg}>
-                                    <img src={img} className={style.img} alt={item.name} />
+                                    <img src={item.image} className={style.img} alt={item.name} />
                                 </div>
                             </div>
                             <div className={style.description}>{item.description}</div>

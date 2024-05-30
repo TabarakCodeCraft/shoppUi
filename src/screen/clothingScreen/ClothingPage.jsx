@@ -52,7 +52,7 @@ const ClothingPage = () => {
 
     const handleCategoryClick = (category, index) => {
         setSelectedCategory(category);
-        setActiveImageIndex(index); // Set the active image index
+        setActiveImageIndex(index); 
         const filtered = products.filter(product => product.category === category);
         setFilteredProducts(filtered);
     }

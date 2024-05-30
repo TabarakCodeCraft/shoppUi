@@ -24,7 +24,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/vouchers" element={<Vouchers />} />
-          {/* <Route path="/favorite" element={<Favorite />} /> */}
+          <Route path="/favorite" element={<Favorite />} />
         </Routes>
       </Router>
     </>
