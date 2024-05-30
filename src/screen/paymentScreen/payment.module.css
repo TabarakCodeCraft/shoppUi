@@ -139,8 +139,8 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    margin-left: 3px;
-    margin-top: 3px;
+    margin-left: 4px;
+    margin-top: 4px;
     border: 1px solid #ccc;
     background: #E5EBFC;
 }
@@ -155,15 +155,15 @@
 
 .items .imgNum {
     position: absolute;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     background: #E5EBFC;
     border-radius: 50%;
     text-align: center;
     border: 2px solid #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    left: 60px;
+    left: 55px;
 }
 
 .items .right {
@@ -176,11 +176,11 @@
     font-weight: 400;
     line-height: 16px;
     color: #000;
-    margin-top: 6px;
+    margin-top: 16px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    width:200px;
+    width: 190px;
 }
 
 .left {
