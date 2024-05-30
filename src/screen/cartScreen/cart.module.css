@@ -35,15 +35,14 @@
     border-radius: 50%;
 }
 
-
 .address {
-    height: 80px;
-    margin-top: 10px;
+    height: 90px;
     border-radius: 10px;
     background: #F9F9F9;
     display: flex;
     justify-content: space-between;
     padding: 10px 16px;
+    width: 100%;
     flex: 1;
 }
 
@@ -89,7 +88,7 @@
     width: 23px;
     font-size: 30px;
     padding: 10px;
-    margin-top: 5.5rem;
+    margin-top: 6rem;
     border: 1px solid #F5F5F5;
     background: #fff;
     margin-left: 8px;
@@ -113,7 +112,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    width:250px;
+    width:190px;
 }
 
 .desch3 {
@@ -122,8 +121,6 @@
     font-size: 17px;
     text-align: start;
     font-weight: 600;
-    margin-top: -8px;
-    margin-bottom: -10px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -135,7 +132,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 8px;
+    margin-top: 12px;
+    margin-right: 10px;
 }
 
 .calclaut {
