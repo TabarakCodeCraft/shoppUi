@@ -1,0 +1,248 @@
+.container {
+    max-width: 400px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    padding: 0;
+}
+
+.top {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    gap: 10px;
+}
+
+.left img {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+}
+
+.left h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    color: #202020;
+    margin-top: 10px;
+}
+
+.left .avatar {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background: #fff;
+    box-shadow: 0px 3px 8px 0px #00000029;
+}
+
+.right {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.right img {
+    width: 35px;
+    height: 35px;
+}
+
+.setting {
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #E5EBFC;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.iconS {
+    color: #004BFE;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.btnTop {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+
+.active {
+    margin-left: 8px;
+    width: 165px;
+    height: 33px;
+    background: #E5EBFC;
+    color: #004BFE;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+}
+
+.inactive {
+    width: 165px;
+    height: 33px;
+    background: #F9F9F9;
+    color: #000000;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.progress {
+    width: 165px;
+    height: 33px;
+    background: #F9F9F9;
+    color: #000000;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.ticketContainer {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+.ticketContainer::before,
+.ticketContainer::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #004cff;
+    border-radius: 50%;
+    top: 60%;
+    transform: translateY(-50%);
+
+}
+
+.ticketContainer::after {
+    left: -12px;
+}
+
+.ticketContainer::before {
+    right: -12px;
+}
+
+.card {
+    margin-top: 10px;
+    border: 1px solid #004cff;
+    box-shadow: 0px 3px 6px 0px #00000029;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.headerCard {
+    height: 45px;
+    border-bottom: 2px dashed #004CFF;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 10px;
+}
+
+.headerCard h3 {
+    padding-left: 10px;
+    margin-top: 3px;
+    color: #004CFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.valid {
+    background: rgba(249, 249, 249, 1);
+    width: 150px;
+    height: 22px;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #001;
+}
+
+.contentCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.gift {
+    display: flex;
+    gap: 16px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.IoGiftSharp {
+    color: #004CFF;
+    width: 13px;
+    height: 13px;
+    font-size: 24px;
+}
+
+.gift h2 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #202020;
+}
+
+.rightCard p {
+    color: red;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    margin-left: 5px;
+}
+
+.leftCard {
+    margin-top: 30px;
+}
+
+.leftCard .btn {
+    width: 95px;
+    height: 28px;
+    border-radius: 6px;
+    background: #004CFF;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    line-height: 18px;
+}

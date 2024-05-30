@@ -1,0 +1,149 @@
+.react-modal-sheet-container {
+    border-top-right-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+    height: 500px !important;
+}
+
+.Header {
+    background: #F8FAFF;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.Header h2 {
+    height: 35px;
+    margin: 25px;
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ticketContainer {
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.ticketContainer::before,
+.ticketContainer::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #004cff;
+    border-radius: 50%;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.ticketContainer::after {
+    left: -12px;
+}
+
+.ticketContainer::before {
+    right: -12px;
+}
+
+.card {
+    width: 350px;
+    height: 130px;
+    border: 1px solid #004cff;
+    box-shadow: 0px 3px 6px 0px #00000029;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 0;
+}
+
+.headerCard {
+    height: 40px;
+    border-bottom: 2px dashed #004CFF;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 10px;
+}
+
+.headerCard h3 {
+    padding-left: 10px;
+    margin-top: 3px;
+    color: #004CFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+}
+
+.valid {
+    background: #FFEBEB;
+    width: 150px;
+    height: 22px;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #001;
+}
+.contentCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.gift {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.IoGiftSharp {
+    color: #004CFF;
+    width: 13px;
+    height: 13px;
+    font-size: 24px;
+}
+
+.gift h2 {
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #202020;
+}
+
+.right p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.left {
+    margin-top: 25px;
+
+}
+
+.left .btn {
+    width: 80px;
+    height: 26px;
+    border-radius: 5px;
+    background: #004CFF;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+}

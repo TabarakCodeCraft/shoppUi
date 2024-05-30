@@ -1,0 +1,111 @@
+.container {
+    max-width: 400px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    padding: 0;
+}
+
+.img2 {
+    position: relative;
+    width: 250px;
+    height: 260px;
+    left: -25px;
+    top: -10px;
+}
+
+.img1 {
+    position: absolute;
+    width: 300px;
+    height: 340px;
+    top: -10px;
+    left: 0;
+}
+
+.rightImg {
+    position: absolute;
+    width: 90px;
+    height: 120px;
+    right: -18px;
+}
+
+.text {
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 47px;
+    color: #202020;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.subTitle {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    color: #202020;
+}
+
+/* 
+.bottomImg {
+    position: relative;
+    margin-top: 150px;
+    width: 250px;
+    height: 330px;
+    right: -175px;
+    bottom: 0;
+} */
+.down {
+    margin-top: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.emailInput {
+    padding: 10px;
+    border-radius: 59px;
+    background: #F8F8F8;
+    outline: none;
+    border: none;
+    width: 310px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 19px;
+    font-size: 15px;
+}
+
+.action {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.btn {
+    width: 330px;
+    height: 60px;
+    background: #004CFF;
+    color: #F3F3F3;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 22px;
+    line-height: 31px;
+    font-weight: 300;
+}
+
+.cancel {
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 300;
+}

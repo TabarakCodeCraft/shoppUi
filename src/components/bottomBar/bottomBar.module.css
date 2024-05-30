@@ -1,0 +1,42 @@
+.FooterIcon {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    border-top: 1px solid #00000029;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconFooter1 {
+    margin-left: 21px;
+    width: 30px;
+    height: 30px;
+    font-weight: 100;
+    color: #202020;
+}
+
+.iconFooter {
+    width: 30px;
+    height: 30px;
+    font-weight: 100;
+    color: #0042E0;
+    transition: color 0.9s, border-bottom 1s;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.iconFooter:hover {
+    margin-left: 16px;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.iconFooter.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}

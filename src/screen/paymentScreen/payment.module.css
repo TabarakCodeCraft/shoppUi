@@ -1,0 +1,360 @@
+.container {
+    max-width: 400px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    padding: 10px;
+}
+
+.main {
+    transition: filter 0.01s ease;
+}
+
+.mainBlurred {
+    filter: blur(6px);
+}
+
+.titleH2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #202020;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    line-height: 30px;
+    padding: 10px;
+}
+
+
+.address {
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    flex: 1;
+}
+
+.shipping h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #202020;
+    margin-top: 4px;
+}
+
+.shipping p {
+    color: #000;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 15px;
+    align-items: start;
+    text-align: start;
+}
+
+.edit {
+    font-size: 26px;
+    width: 40px;
+    height: 35px;
+    margin-top: 30px;
+}
+
+
+.item {
+    height: 50px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item .text {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text h2 {
+    font-weight: 700;
+    color: #202020;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.item .num {
+    width: 30px;
+    height: 30px;
+    background: #E5EBFC;
+    border: 1px solid #E5EBFC;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.add {
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #0042E0;
+    color: #0042E0;
+    border-radius: 20px;
+    width: 116px;
+    padding: 10px;
+    background: #fff;
+}
+
+.discountBtn {
+    color: #fff;
+    outline: none;
+    border: none;
+    background: #0042E0;
+    width: 135px;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.IoClose {
+    font-size: 20px;
+
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.items .img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 3px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    background: #E5EBFC;
+}
+
+.items .borderImg {
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px 0px #00000029;
+    border-radius: 50%;
+}
+
+.items .imgNum {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #E5EBFC;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    left: 60px;
+}
+
+.items .right {
+    display: flex;
+    gap: 20px;
+}
+
+.description {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: #000;
+    margin-top: 6px;
+}
+
+.left {
+    margin-right: 12px;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    line-height: 22px;
+    color: #202020;
+    font-size: 18px;
+}
+
+.options {
+    margin-top: 16px;
+    height: 160px;
+}
+
+.titleOption {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #202020;
+}
+
+.standard {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 14px;
+    height: 45px;
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.sLeft {
+    margin-left: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: -8px;
+}
+
+.sLeft h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+}
+
+.sLeft .days {
+    color: #0042E0;
+    width: 75px;
+    height: 26px;
+    font-weight: 400;
+    font-size: 13px;
+    align-items: center;
+    background: #F5F8FF;
+    border-radius: 5px;
+}
+
+.days h3 {
+    color: #0042E0;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.sRight {
+    margin-right: 20px;
+}
+
+.express {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 14px;
+    height: 45px;
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+
+.total {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 80px;
+    bottom: 80px;
+    width: 100%;
+    margin-top: 50vh;
+    height: 60px;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.price {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.price p {
+    margin-left: 10px;
+    margin-bottom: 18px;
+    color: #202020;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.price h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.checkout {
+    margin-right: 22px;
+}
+
+.btn {
+    border-radius: 10px;
+    background: #000;
+    outline: none;
+    border: none;
+    width: 128px;
+    height: 40px;
+    font-weight: 400;
+    color: #F3F3F3;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.active {
+    border: 2px solid #DCE9FF;
+    background: #DCE9FF;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #0042E0;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.checked {
+    background: #fff;
+    color: #0042E0;
+}
+
+.checked::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0042E0;
+}
