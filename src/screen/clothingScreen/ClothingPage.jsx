@@ -8,7 +8,7 @@ import img3 from "../../assets/categories/cat5.png";
 import icon from "../../assets/icon.svg";
 import { useNavigate } from 'react-router-dom';
 import BottomBar from '../../components/bottomBar/bottomBar';
-import { categoriesSkeleton, ProductSkeleton } from '../../components/skeleton/skeleton';
+import { CategorySkeleton, ProductSkeleton } from '../../components/skeleton/skeleton';
 
 const ClothingPage = () => {
     const [categories, setCategories] = useState([]);
@@ -40,8 +40,29 @@ const ClothingPage = () => {
             });
     }, []);
 
-    const handleOptions = (productId) => {
+    const handleOptions = (productId, event) => {
+        createRipple(event);
         navigate(`/product-option/${productId}`);
+    }
+
+    const createRipple = (event) => {
+        const card = event.currentTarget;
+        const circle = document.createElement('span');
+        const diameter = Math.max(card.clientWidth, card.clientHeight);
+        const radius = diameter / 2;
+
+        circle.style.width = circle.style.height = `${diameter}px`;
+        circle.style.left = `${event.clientX - card.offsetLeft - radius}px`;
+        circle.style.top = `${event.clientY - card.offsetTop - radius}px`;
+        circle.classList.add(style.ripple);
+
+        const ripple = card.getElementsByClassName(style.ripple)[0];
+
+        if (ripple) {
+            ripple.remove();
+        }
+
+        card.appendChild(circle);
     }
 
     const handleSearch = (e) => {
@@ -81,7 +102,7 @@ const ClothingPage = () => {
 
                 <div className={style.categories}>
                     {loadingCategories ? (
-                        Array.from({ length: 4 }).map((_, index) => <categoriesSkeleton key={index} />)
+                        Array.from({ length: 4 }).map((_, index) => <CategorySkeleton key={index} />)
                     ) : (
                         categories.map((category, index) => (
                             <div key={index} className={style.cat} onClick={() => handleCategoryClick(category, index)}>
@@ -106,7 +127,7 @@ const ClothingPage = () => {
                     ) : (
                         filteredProducts.map(product => (
                             <div key={product.id} className={style.productCard}>
-                                <div className={style.cardItem} onClick={() => handleOptions(product.id)}>
+                                <div className={style.cardItem} onClick={(e) => handleOptions(product.id, e)}>
                                     <div className={style.imgCard}>
                                         <div className={style.cardBorder}>
                                             <img src={product.image} className={style.imageCard} alt={product.title} />
