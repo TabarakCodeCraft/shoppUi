@@ -4,14 +4,13 @@ import style from "./payment.module.css";
 import edit from "../../assets/edit.svg";
 import { IoClose } from 'react-icons/io5';
 import { FaCheckCircle } from "react-icons/fa";
-import Modal from '../../components/modal/modal';
-import ModalEdit from '../../components/modalEdit/modalEdit';
+import Modal from '../../components/voucherModal/modal';
+import ModalEdit from '../../components/editModal/modalEdit';
 import BottomBar from '../../components/bottomBar/bottomBar';
 import SuccessModal from "../../components/successModal/successModal";
 
 const Payment = () => {
     const location = useLocation();
-    const navigate = useNavigate();
 
     const [selectedShipping, setSelectedShipping] = useState('');
     const [isEditModal, setEditModal] = useState(false);

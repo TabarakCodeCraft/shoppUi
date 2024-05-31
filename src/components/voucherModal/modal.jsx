@@ -1,5 +1,5 @@
 import { Sheet } from 'react-modal-sheet';
-import style from "../modal/modal.module.css";
+import style from "./modal.module.css";
 import BottomBar from "../bottomBar/bottomBar.jsx";
 import { IoGiftSharp } from "react-icons/io5";
 

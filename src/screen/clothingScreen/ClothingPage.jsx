@@ -8,30 +8,35 @@ import img3 from "../../assets/categories/cat5.png";
 import icon from "../../assets/icon.svg";
 import { useNavigate } from 'react-router-dom';
 import BottomBar from '../../components/bottomBar/bottomBar';
+import { categoriesSkeleton, ProductSkeleton } from '../../components/skeleton/skeleton';
 
 const ClothingPage = () => {
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState('');
-    const [activeImageIndex, setActiveImageIndex] = useState(null); // State to track the active image
+    const [activeImageIndex, setActiveImageIndex] = useState(null);
     const [searchInput, setSearchInput] = useState('');
+    const [loadingCategories, setLoadingCategories] = useState(true);
+    const [loadingProducts, setLoadingProducts] = useState(true);
     const navigate = useNavigate();
 
     const images = [img, img1, img2, img3];
 
     useEffect(() => {
-
         fetch('https://fakestoreapi.com/products/categories')
             .then(res => res.json())
-            .then(json => setCategories(json.slice(0, 10)));
-
+            .then(json => {
+                setCategories(json.slice(0, 10));
+                setLoadingCategories(false);
+            });
 
         fetch('https://fakestoreapi.com/products')
             .then(res => res.json())
             .then(json => {
                 setProducts(json);
                 setFilteredProducts(json); 
+                setLoadingProducts(false);
             });
     }, []);
 
@@ -67,23 +72,27 @@ const ClothingPage = () => {
                             type="search"
                             className={style.search}
                             placeholder='Search Clothing'
-                            value={searchInput} // Bind search input value
-                            onChange={handleSearch} // Update state on input change
+                            value={searchInput}
+                            onChange={handleSearch}
                         />
                         <CiCamera className={style.ciCamera} />
                     </div>
                 </div>
 
                 <div className={style.categories}>
-                    {categories.map((category, index) => (
-                        <div key={index} className={style.cat} onClick={() => handleCategoryClick(category, index)}>
-                            <div className={`${style.imgcategories} ${activeImageIndex === index ? style.active : ''}`}>
-                                <div className={style.borderImg}></div>
-                                <img src={images[index]} className={style.image} alt={category} />
+                    {loadingCategories ? (
+                        Array.from({ length: 4 }).map((_, index) => <categoriesSkeleton key={index} />)
+                    ) : (
+                        categories.map((category, index) => (
+                            <div key={index} className={style.cat} onClick={() => handleCategoryClick(category, index)}>
+                                <div className={`${style.imgcategories} ${activeImageIndex === index ? style.active : ''}`}>
+                                    <div className={style.borderImg}></div>
+                                    <img src={images[index]} className={style.image} alt={category} />
+                                </div>
+                                <div className={style.titlecat}>{category}</div>
                             </div>
-                            <div className={style.titlecat}>{category}</div>
-                        </div>
-                    ))}
+                        ))
+                    )}
                 </div>
 
                 <div className={style.topItem}>
@@ -92,23 +101,27 @@ const ClothingPage = () => {
                 </div>
 
                 <div className={style.item}>
-                    {filteredProducts.map(product => (
-                        <div key={product.id} className={style.productCard}>
-                            <div className={style.cardItem} onClick={() => handleOptions(product.id)}>
-                                <div className={style.imgCard}>
-                                    <div className={style.cardBorder}>
-                                        <img src={product.image} className={style.imageCard} alt={product.title} />
+                    {loadingProducts ? (
+                        Array.from({ length: 6 }).map((_, index) => <ProductSkeleton key={index} />)
+                    ) : (
+                        filteredProducts.map(product => (
+                            <div key={product.id} className={style.productCard}>
+                                <div className={style.cardItem} onClick={() => handleOptions(product.id)}>
+                                    <div className={style.imgCard}>
+                                        <div className={style.cardBorder}>
+                                            <img src={product.image} className={style.imageCard} alt={product.title} />
+                                        </div>
                                     </div>
                                 </div>
+                                <div className={style.description}>
+                                    {product.title}
+                                </div>
+                                <div className={style.priceP}>
+                                    ${product.price}
+                                </div>
                             </div>
-                            <div className={style.description}>
-                                {product.title}
-                            </div>
-                            <div className={style.priceP}>
-                                ${product.price}
-                            </div>
-                        </div>
-                    ))}
+                        ))
+                    )}
                 </div>
             </div>
             <BottomBar />

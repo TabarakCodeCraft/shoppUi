@@ -1,5 +1,5 @@
 import { Sheet } from 'react-modal-sheet';
-import style from "../modalEdit/moadlEdit.module.css"
+import style from "../editModal/moadlEdit.module.css"
 import BottomBar from '../bottomBar/bottomBar';
 import { useState } from 'react';
 

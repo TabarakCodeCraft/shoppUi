@@ -59,7 +59,8 @@
     grid-template-columns: repeat(4, 1fr);
     padding: 10px;
     column-gap: 5px;
-    row-gap: 3px;
+    margin-right: -5px;
+    margin-left: 5px;
 }
 
 .image {
@@ -178,7 +179,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    width:170px;
+    width: 170px;
 }
 
 .priceP {
@@ -186,5 +187,5 @@
     font-weight: 600;
     font-size: 18px;
     color: #202020;
- 
+
 }
