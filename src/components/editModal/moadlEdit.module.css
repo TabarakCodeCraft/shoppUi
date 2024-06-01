@@ -30,7 +30,7 @@
 }
 
 .input {
-    width: 280px;
+    width: 300px;
     padding: 10px;
     outline: none;
     border: none;
@@ -42,12 +42,14 @@
     color: #000;
 }
 
-.inputs p{
+.inputs p {
     text-align: start;
+    margin-left: 20px;
     color: #000;
     font-weight: 600;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .btn {
@@ -57,16 +59,18 @@
 }
 
 .btn button {
+    margin-top: 20px;
     border: none;
     outline: none;
     background: #004CFF;
-    width: 350px;
+    width: 300px;
     height: 40px;
     color: #fff;
     border-radius: 9px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
 }
+
 /* .modalBottomBar .iconFooter:not(.paperIcon) {
     filter: blur(3px); /* Blur all icons except IoMdPaper 
   } */

@@ -82,13 +82,13 @@
 .valid {
     background: #FFEBEB;
     width: 180px;
-    height: 25px;
+    height: 24px;
     text-align: center;
     align-items: center;
     margin-top: 5px;
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #001;
     border-radius: 6px;
