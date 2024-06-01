@@ -43,8 +43,7 @@ function Modal({ isOpen, setOpen, onApplyVoucher }) {
                             <div className={style.card}>
                                 <div className={style.headerCard}>
                                     <h3>Voucher</h3>
-                                    <div className={style.valid}><h4>Valid Until 5.16.20</h4></div>
-                                </div>
+                                    <button className={style.valid}>Valid Until 5.16.20</button></div>
                                 <div className={style.contentCard}>
                                     <div className={style.right}>
                                         <div className={style.gift}>
@@ -72,8 +71,7 @@ function Modal({ isOpen, setOpen, onApplyVoucher }) {
                             <div className={style.card}>
                                 <div className={style.headerCard}>
                                     <h3>Voucher</h3>
-                                    <div className={style.valid}><h4>Valid Until 5.16.20</h4></div>
-                                </div>
+                                    <button className={style.valid}>Valid Until 5.16.20</button></div>
                                 <div className={style.contentCard}>
                                     <div className={style.right}>
                                         <div className={style.gift}>
@@ -100,8 +98,7 @@ function Modal({ isOpen, setOpen, onApplyVoucher }) {
                             <div className={style.card}>
                                 <div className={style.headerCard}>
                                     <h3>Voucher</h3>
-                                    <div className={style.valid}><h4>Valid Until 5.16.20</h4></div>
-                                </div>
+                                    <button className={style.valid}>Valid Until 5.16.20</button></div>
                                 <div className={style.contentCard}>
                                     <div className={style.right}>
                                         <div className={style.gift}>
@@ -128,8 +125,7 @@ function Modal({ isOpen, setOpen, onApplyVoucher }) {
                             <div className={style.card}>
                                 <div className={style.headerCard}>
                                     <h3>Voucher</h3>
-                                    <div className={style.valid}><h4>Valid Until 5.16.20</h4></div>
-                                </div>
+                                    <button className={style.valid}>Valid Until 5.16.20</button></div>
                                 <div className={style.contentCard}>
                                     <div className={style.right}>
                                         <div className={style.gift}>
