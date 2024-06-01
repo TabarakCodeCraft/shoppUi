@@ -170,7 +170,7 @@
 
 .headerCard h3 {
     padding-left: 10px;
-    margin-top: 3px;
+    margin-top: 7px;
     color: #004CFF;
     font-weight: 700;
     font-size: 18px;
@@ -178,8 +178,8 @@
 
 .valid {
     background: rgba(249, 249, 249, 1);
-    width: 170px;
-    height: 22px;
+    width: 160px;
+    height: 25px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -197,7 +197,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0 16px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -220,7 +220,7 @@
     font-weight: 700;
     font-size: 18px;
     color: #202020;
-    margin-bottom: 5px;
+    margin-top: -10px;
 }
 
 .rightCard p {
@@ -229,7 +229,6 @@
     line-height: 18px;
     color: #000;
     margin-left: 5px;
-    margin-bottom: 10px;
 }
 
 .leftCard {
