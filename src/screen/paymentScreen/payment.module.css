@@ -118,12 +118,15 @@
     border-radius: 20px;
     display: flex;
     text-align: center;
-    gap: 10px;
+    align-items: center;
+    font-size: 13px;
+    gap: 8px;
     padding: 10px;
+    margin-left: 8px;
 }
 
 .IoClose {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .items {
