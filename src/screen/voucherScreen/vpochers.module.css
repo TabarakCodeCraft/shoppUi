@@ -1,9 +1,9 @@
 .container {
-    max-width: 400px;
+    max-width: 350px;
     height: 100vh;
     margin: auto;
     position: relative;
-    padding: 0;
+    padding: 10px;
 }
 
 .top {
@@ -124,7 +124,6 @@
     position: relative;
     overflow: hidden;
     margin: auto;
-
 }
 
 .ticketContainer::before,
