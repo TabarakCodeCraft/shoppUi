@@ -81,7 +81,7 @@
 
 .valid {
     background: #FFEBEB;
-    width: 150px;
+    width: 170px;
     height: 22px;
     text-align: center;
     align-items: center;
@@ -91,6 +91,7 @@
     font-size: 15px;
     font-weight: 500;
     color: #001;
+    border-radius: 6px;
 }
 .contentCard {
     display: flex;
