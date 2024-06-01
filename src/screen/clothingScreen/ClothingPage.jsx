@@ -8,7 +8,7 @@ import img3 from "../../assets/categories/cat5.png";
 import icon from "../../assets/icon.svg";
 import { useNavigate } from 'react-router-dom';
 import BottomBar from '../../components/bottomBar/bottomBar';
-import { CategorySkeleton, ProductSkeleton } from '../../components/skeleton/skeleton';
+import { categoriesSkeleton, ProductSkeleton } from '../../components/skeleton/skeleton';
 
 const ClothingPage = () => {
     const [categories, setCategories] = useState([]);
@@ -102,7 +102,7 @@ const ClothingPage = () => {
 
                 <div className={style.categories}>
                     {loadingCategories ? (
-                        Array.from({ length: 4 }).map((_, index) => <CategorySkeleton key={index} />)
+                        Array.from({ length: 4 }).map((_, index) => <categoriesSkeleton key={index} />)
                     ) : (
                         categories.map((category, index) => (
                             <div key={index} className={style.cat} onClick={() => handleCategoryClick(category, index)}>

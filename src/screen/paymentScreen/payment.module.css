@@ -26,7 +26,6 @@
     padding: 10px;
 }
 
-
 .address {
     height: 80px;
     margin-top: 10px;
@@ -63,7 +62,6 @@
     height: 35px;
     margin-top: 30px;
 }
-
 
 .item {
     height: 50px;
@@ -126,7 +124,6 @@
 
 .IoClose {
     font-size: 20px;
-
 }
 
 .items {
@@ -230,6 +227,7 @@ label {
     cursor: pointer;
     font-weight: 700;
     margin-left: -8px;
+
 }
 
 .sLeft h2 {
@@ -272,7 +270,6 @@ label {
     border-radius: 12px;
 }
 
-
 .total {
     position: fixed;
     left: 0;
@@ -286,7 +283,6 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .price {
@@ -308,7 +304,6 @@ label {
     color: #000;
     font-size: 20px;
     font-weight: 800;
-
 }
 
 .checkout {
@@ -327,7 +322,6 @@ label {
     font-family: 'Nunito Sans', sans-serif;
     cursor: pointer;
     font-size: 18px;
-
 }
 
 .active {
@@ -339,14 +333,13 @@ label {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 1px solid #0042E0;
+    border: 1px solid #F3F3F3;
     cursor: pointer;
     position: relative;
-    background: #fff;
+
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .checked {
@@ -360,5 +353,5 @@ label {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #0042E0;
+    background: #fff;
 }

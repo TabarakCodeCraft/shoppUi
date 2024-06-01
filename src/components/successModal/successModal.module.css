@@ -12,7 +12,7 @@
 
 .modalContent {
     background: white;
-    padding: 1.9rem;
+    padding: 1.5rem;
     border-radius: 16px;
     text-align: center;
     position: relative;
@@ -21,7 +21,7 @@
 
 .iconContainer {
     position: absolute;
-    top: -40px; /* Adjust according to the size of the icon */
+    top: -40px; 
     left: 50%;
     transform: translateX(-50%);
     background: white;

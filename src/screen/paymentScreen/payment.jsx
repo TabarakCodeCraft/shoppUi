@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import style from "./payment.module.css";
 import edit from "../../assets/edit.svg";
 import { IoClose } from 'react-icons/io5';
