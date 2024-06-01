@@ -124,7 +124,6 @@
     position: relative;
     overflow: hidden;
     margin: auto;
-    height: 140px;
 }
 
 .ticketContainer::before,
@@ -161,9 +160,10 @@
     height: 40px;
     border-bottom: 2px dashed #004CFF;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     align-items: center;
+    gap: 3.5rem;
     font-family: 'Raleway', sans-serif;
     padding-right: 10px;
 }
@@ -174,13 +174,11 @@
     color: #004CFF;
     font-weight: 700;
     font-size: 18px;
-    line-height: 23px;
-    text-align: center;
 }
 
 .valid {
     background: rgba(249, 249, 249, 1);
-    width: 190px;
+    width: 170px;
     height: 22px;
     display: flex;
     justify-content: center;
@@ -192,7 +190,7 @@
     font-size: 15px;
     font-weight: 500;
     color: #001;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .contentCard {
@@ -208,8 +206,6 @@
     gap: 16px;
     margin-top: 4px;
     margin-left: 10px;
-    align-items: center;
-    text-align: center;
 }
 
 .IoGiftSharp {
@@ -217,6 +213,7 @@
     width: 13px;
     height: 13px;
     font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .gift h2 {
