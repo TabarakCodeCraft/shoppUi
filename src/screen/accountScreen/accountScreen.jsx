@@ -76,7 +76,7 @@ const AccountScreen = () => {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
-                        />
+                        ></input>
                         <div className={style.password}>
                             <input
                                 type={isPasswordVisible ? 'text' : 'password'}
@@ -102,6 +102,7 @@ const AccountScreen = () => {
                             inputClass={style.phoneInput}
                             buttonClass={style.flagDropdown}
                             dropdownClass={style.flagDropdownMenu}
+
                         />
 
                         <div className={style.containerActions}>

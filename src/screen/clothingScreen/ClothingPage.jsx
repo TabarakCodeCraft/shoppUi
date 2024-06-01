@@ -144,7 +144,9 @@ const ClothingPage = () => {
                         ))
                     )}
                 </div>
+                <div className={style.space}></div>
             </div>
+
             <BottomBar />
         </>
     );

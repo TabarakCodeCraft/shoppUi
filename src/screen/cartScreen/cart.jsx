@@ -87,7 +87,10 @@ const Cart = () => {
                         <p>${cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}</p>
                     </div>
                     <div className={style.checkout}>
-                        <button className={style.btn} onClick={handleCheckout}>Checkout</button>
+                        <button className={`${style.btn} ${cartItems.length === 0 ? style.disabledBtn : ''}`}
+                            onClick={handleCheckout}
+                            disabled={cartItems.length === 0}
+                        >Checkout</button>
                     </div>
                 </div>
 

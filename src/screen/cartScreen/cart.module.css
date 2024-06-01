@@ -94,12 +94,13 @@
 }
 
 .imgCart {
-    border: 2px solid #FFFFFF;
+    border: 1px solid #f0f0f0;
     box-shadow: 0px 5px 10px 0px #0000001A;
     width: 130px;
     height: 140px;
     margin-top: 8px;
     border-radius: 8px;
+    object-fit: contain;
 }
 
 .descP {
@@ -130,17 +131,17 @@
 
 .sallerCard .footerCard {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     margin-top: 14px;
     margin-right: 8px;
+    width: 100%;
 }
 
 .calclaut {
     display: flex;
     align-items: center;
-    gap: 7px;
-
+    gap: 6px;
 }
 
 .calc {
@@ -231,4 +232,8 @@
     font-family: 'Nunito Sans', sans-serif;
     cursor: pointer;
 
+}
+.btn.disabledBtn {
+    background: gray;
+    cursor: not-allowed;
 }

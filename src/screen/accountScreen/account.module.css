@@ -82,9 +82,9 @@
     border-radius: 30px;
     font-size: 16px;
     color: #7a7a7a;
-    padding: 12px 8px !important;
-    height: 35px !important;
-    width: 320px !important;
+    padding: 12px;
+    height: 36px !important;
+    width: 315px !important;
 
 }
 
@@ -127,9 +127,9 @@
     align-items: center;
     background: #F8F8F8;
     border-radius: 30px;
-    padding: 12px 8px !important;
-    height: 35px !important;
-    width: 320px !important;
+    padding: 12px;
+    height: 36px !important;
+    width: 315px !important;
 }
 
 .form_pass {
@@ -199,6 +199,7 @@ input::placeholder {
         left: -30px;
         top: -70px;
     }
+
     .uploadPhoto {
         position: relative;
         margin-top: 28px;
@@ -213,7 +214,7 @@ input::placeholder {
         font-size: 35px;
         margin-top: 40px;
     }
-    
+
     .img2 {
         margin-top: -80px;
         right: -10px;
