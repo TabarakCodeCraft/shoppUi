@@ -124,6 +124,7 @@
     position: relative;
     overflow: hidden;
     margin: auto;
+    height: 140px;
 }
 
 .ticketContainer::before,
@@ -157,7 +158,7 @@
 }
 
 .headerCard {
-    height: 45px;
+    height: 40px;
     border-bottom: 2px dashed #004CFF;
     display: flex;
     justify-content: space-between;
@@ -174,12 +175,15 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
+    text-align: center;
 }
 
 .valid {
     background: rgba(249, 249, 249, 1);
-    width: 150px;
+    width: 190px;
     height: 22px;
+    display: flex;
+    justify-content: center;
     text-align: center;
     align-items: center;
     margin-top: 5px;
@@ -188,6 +192,7 @@
     font-size: 15px;
     font-weight: 500;
     color: #001;
+    border-radius: 8px;
 }
 
 .contentCard {
@@ -203,6 +208,8 @@
     gap: 16px;
     margin-top: 4px;
     margin-left: 10px;
+    align-items: center;
+    text-align: center;
 }
 
 .IoGiftSharp {
@@ -219,7 +226,6 @@
 }
 
 .rightCard p {
-    color: red;
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
