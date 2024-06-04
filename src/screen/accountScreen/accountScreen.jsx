@@ -69,7 +69,7 @@ const AccountScreen = () => {
                     </div>
 
                     <div className={style.inputs}>
-                        <input
+                        <input 
                             type="email"
                             placeholder='Email'
                             className={style.form}

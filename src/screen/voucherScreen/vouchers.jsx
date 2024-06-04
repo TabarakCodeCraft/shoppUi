@@ -62,6 +62,73 @@ const Vouchers = () => {
 
                 </div>
 
+                <div className={style.ticketContainer}>
+                    <div className={style.card}>
+                        <div className={style.headerCard}>
+                            <h3>Voucher</h3>
+                            <button className={style.valid}>Valid Until 5.16.20</button >
+                        </div>
+                        <div className={style.contentCard}>
+                            <div className={style.rightCard}>
+                                <div className={style.gift}>
+                                    <div className={style.IoGiftSharp}><IoGiftSharp /></div>
+                                    <h2>First Purchase</h2>
+                                </div>
+                                <p>5% off for your next order</p>
+                            </div>
+                            <div className={style.leftCard}>
+                                <button className={style.btn}>Collected</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div className={style.ticketContainer}>
+                    <div className={style.card}>
+                        <div className={style.headerCard}>
+                            <h3>Voucher</h3>
+                            <button className={style.valid}>Valid Until 5.16.20</button >
+                        </div>
+                        <div className={style.contentCard}>
+                            <div className={style.rightCard}>
+                                <div className={style.gift}>
+                                    <div className={style.IoGiftSharp}><IoGiftSharp /></div>
+                                    <h2>First Purchase</h2>
+                                </div>
+                                <p>5% off for your next order</p>
+                            </div>
+                            <div className={style.leftCard}>
+                                <button className={style.btn}>Collected</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className={style.ticketContainer}>
+                    <div className={style.card}>
+                        <div className={style.headerCard}>
+                            <h3>Voucher</h3>
+                            <button className={style.valid}>Valid Until 5.16.20</button >
+                        </div>
+                        <div className={style.contentCard}>
+                            <div className={style.rightCard}>
+                                <div className={style.gift}>
+                                    <div className={style.IoGiftSharp}><IoGiftSharp /></div>
+                                    <h2>First Purchase</h2>
+                                </div>
+                                <p>5% off for your next order</p>
+                            </div>
+                            <div className={style.leftCard}>
+                                <button className={style.btn}>Collected</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
 
                 <div className={style.ticketContainer}>
                     <div className={style.card}>
